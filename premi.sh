@@ -328,7 +328,7 @@ sts="${Info}"
 else
 sts="${Error}"
 fi
-domain=$(cat /root/domain)
+domain=$(cat /etc/xray/domain)
 userdel jame > /dev/null 2>&1
 mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
@@ -345,11 +345,11 @@ TEXT="
 <code>Date   : </code><code>$TIME</code>
 <code>Time   : </code><code>$TIMEZONE</code>
 <code>Ip vps : </code><code>$ipsaya</code>
-<code>Exp Sc : </code><code>$exp1 $sts</code>
+<code>Exp Sc : </code><code>$exp1</code>
 <code>Vertion : </code><code>7.4.7 FT</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github
-<b>Install Script Ft By FREETUNNEL</b></i>
+<b>INSTALL SCRIPT FT BY FREETUNNEL</b></i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/freetunnel1"},{"text":"Contack","url":"wa.me/6281927625651"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
@@ -910,12 +910,12 @@ restart_system
 instal
 echo ""
 history -c
-rm -rf /root/menu
+rm -rf /root/1
 rm -rf /root/*.zip
 rm -rf /root/*.sh
 rm -rf /root/LICENSE
 rm -rf /root/README.md
-rm -rf /root/domain
+rm -rf /root/scdomain
 secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
 clear
