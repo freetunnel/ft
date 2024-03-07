@@ -52,7 +52,7 @@
 - UNDER ATTACK MODE : OFF
 
 ### TAMPILAN SCRIPT 
-<p align="center"><img src="https://raw.githubusercontent.com/freetunnel/ft/main/Img/ss1.jpg"width="300"></p><p align="center"><img src="https://raw.githubusercontent.com/freetunnel/ft/main/Img/ss2.jpg"width="300"></p>
+<p align=><img src="https://raw.githubusercontent.com/freetunnel/ft/main/Img/ss1.jpg"width="300"></p><p align=><img src="https://raw.githubusercontent.com/freetunnel/ft/main/Img/ss2.jpg"width="300"></p>
 
 
 ### CONTACT FREE TUNNELING PROJECT
