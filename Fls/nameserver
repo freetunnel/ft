@@ -4,7 +4,7 @@ ns_domain_cloudflare() {
 	DOMAIN="freetunnel.pw"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=sld$(tr </dev/urandom -dc 0-9 | head -c4)
-	SUB_DOMAIN=${SUB}."freetunnel.pw"
+	SUB_DOMAIN=${SUB}."freetunnel.dev"
 	NS_DOMAIN=ns.${SUB_DOMAIN}
 	CF_ID=pribadi.no99@gmail.com
         CF_KEY=e706e0ce65fb5c6e233c233e6e2e6614d4aec
