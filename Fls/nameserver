@@ -1,13 +1,13 @@
 #!/bin/sh
 REPOS="https://github.com/freetunnel/vrk/raw/main/"
 ns_domain_cloudflare() {
-	DOMAIN="freetunnel.pw"
+	DOMAIN="ftpdns.web.id"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=sld$(tr </dev/urandom -dc 0-9 | head -c4)
-	SUB_DOMAIN=${SUB}."freetunnel.dev"
+	SUB_DOMAIN=${SUB}."ftpdns.web.id"
 	NS_DOMAIN=ns.${SUB_DOMAIN}
-	CF_ID=pribadi.no99@gmail.com
-        CF_KEY=e706e0ce65fb5c6e233c233e6e2e6614d4aec
+	CF_ID=funtube.no99@gmail.com
+        CF_KEY=5ad69c81da181f59fd018f350485df3957608
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."
