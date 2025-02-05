@@ -2,11 +2,11 @@
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 #read -p "Masukan Domain (contoh : Dragon)" domen
-DOMAIN=freetunnel.pw
+DOMAIN=ftp.web.id
 sub=$(</dev/urandom tr -dc a-z | head -c5)
-dns=${sub}.freetunnel.pw
-CF_ID=pribadi.no99@gmail.com
-CF_KEY=e706e0ce65fb5c6e233c233e6e2e6614d4aec
+dns=${sub}.ftp.web.id
+CF_ID=funtube.no99@gmail.com
+CF_KEY=5ad69c81da181f59fd018f350485df3957608
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
