@@ -869,16 +869,6 @@ systemctl restart haproxy
 print_success "Enable Service"
 clear
 }
-function ddos(){
-print_install "ANTI DDOS SYSTEM BETA"
-wget -qO /usr/sbin/ddos.zip "https://scku.delproject.dev/bin/ddos.zip" >/dev/null 2>&1
-    unzip /usr/sbin/ddos.zip -d /usr/sbin/
-    rm -rf /usr/sbin/ddos.zip
-    chmod +x /usr/sbin/ddos-deflate-master/*
-    cd /usr/sbin/ddos-deflate-master
-    ./uninstall.sh && ./install.sh
-print_success "ANTI DDOS SYSTEM"
-}
 function instal(){
 clear
 first_setup
@@ -899,7 +889,6 @@ ins_openvpn
 ins_backup
 ins_swab
 ins_Fail2ban
-ddos
 ins_epro
 ins_restart
 menu
